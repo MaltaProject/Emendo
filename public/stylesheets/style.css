@@ -1,0 +1,136 @@
+body {
+    font:normal 12px 'Helvetica Neue', Arial, sans-serif;
+    background-color: #ffffff;
+    overflow: auto;
+    position:absolute;
+    padding: 0;
+    margin: 0; 
+    height: 100%; 
+    width: 100%;'
+}
+
+a {
+  color: #00B7FF;
+}
+#panelContainer {
+  float: left; 
+  width: 25%; 
+  height: 100%;
+  position: relative;
+}
+
+#errorContainer {
+  height: 85%;
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  clear: left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#errorSpacer {
+  height: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.menuContainer {
+  height: 50px;
+  width: 100px;
+}
+
+.buttonContainer {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #CCCCCC;
+  background-color: #ffffff;
+  border-radius: 3px;
+  margin-botton: 9px;
+  margin-top: 9px;
+}
+
+.mainButton {
+  height: 100%;
+  width: 90%;
+}
+.mainButton:hover .buttonTextContainer{
+  background-color: #ECECEC;
+}
+.mainButton:hover .buttonImage{
+  background-color: #ECECEC;
+}
+
+.buttonImage {
+  height: 100%;
+  min-width: 20px;
+  width: 20%;
+  background-color: ffffff;
+  border-right-style: solid;
+  border-width: 1px;
+  border-color: #CCCCCC;
+  float: left;
+  text-align: center;
+  line-height: 50px;
+}
+.buttonImage img {
+  vertical-align: middle;
+}
+
+.buttonTextContainer {
+  background-color: #F6F6F6;
+  height: 100%;
+  width: 79%;
+  border-right-style: solid;
+  border-width: 1px;
+  border-color: #CCCCCC;
+  float: left;
+}
+
+.buttonText {
+  /*Disable Highlighting*/
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 50px;
+  padding-left: 7px;
+  float: left;
+}
+
+.infoButton {
+  float: right;
+  text-align: center;
+  width: 10%;
+  line-height: 50px;
+  background-color: #FAFAFA;
+}
+
+.infoButton img {
+  vertical-align: center;
+}
+
+.infoSlider {
+  width: 100%;
+  height: 0;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-right-style: solid;
+  border-color: #CCCCCC;
+  border-width: 0px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.infoText {
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-bottom: 3px;
+  height: 100%;
+  width: 100%;
+  visibility: hidden;
+}

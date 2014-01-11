@@ -1,0 +1,68 @@
+extends layout
+
+block content
+  #page(style='width: 100%; height: 100%; margin: 0 auto;')
+    #panelContainer
+      <h3>Errors</h3><br>
+      #errorContainer
+        #errorSpacer
+
+          //- Non-Closed Area Button
+          #one.MenuContainer
+            #one.buttonContainer
+              #one.infoButton
+                img(src='/images/i.svg' height='12' width='12') 
+              #one.mainButton
+                #one.buttonImage
+                  img(src='/images/pin/pin.svg' height='20' width='20')
+                #one.buttonTextContainer
+                  #one.buttonText
+                    |Non-Closed Area
+            #one.infoSlider
+              #one.infoText
+                |A non closed area occurs when
+            
+          //- Dead Ended One-Ways
+          #two.MenuContainer
+            #two.buttonContainer
+              #two.infoButton
+                img(src='/images/i.svg' height='12' width='12') 
+              #two.mainButton
+                #two.buttonImage
+                  img(src='/images/pin/pin.svg' height='20' width='20')
+                #two.buttonTextContainer
+                  #two.buttonText
+                    |Dead Ended One-Ways
+            #two.infoSlider
+              #two.infoText
+                |A non closed area occurs when            
+
+    //- Handles Information Pane Expansion
+    Script.
+      $('.infoButton').click(function() {
+        if ($('.infoSlider').height() == 0) {
+          $('.infoSlider').css('border-width','1px');
+          $('.buttonContainer').css('border-bottom-left-radius', '0px');
+          $('.buttonContainer').css('border-bottom-right-radius','0px');
+                  
+          $('.infoSlider').animate({height: '150px'}, {
+            complete: function() {
+              $('.infoText').css('visibility','visible');
+            }});
+          } else {
+            $('.infoText').css('visibility','hidden');
+            $('.infoSlider').animate({height: '0px'}, {
+              complete: function() {
+                $('.infoSlider').css('border-width','0px');
+                $('.buttonContainer').css('border-bottom-left-radius', '3px');
+                $('.buttonContainer').css('border-bottom-right-radius','3px');
+            }});
+      }});
+            
+    #mapContainer(style='float: right; width: 75%; height: 100%;')
+
+      script.
+        var map = new L.Map('mapContainer').setView([0, 0], 2);
+        // add an OpenStreetMap tile layer
+        L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'}).addTo(map);
