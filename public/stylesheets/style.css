@@ -35,11 +35,6 @@ a {
   padding-right: 15px;
 }
 
-.menuContainer {
-  height: 50px;
-  width: 100px;
-}
-
 .buttonContainer {
   width: 100%;
   height: 50px;
@@ -102,7 +97,7 @@ a {
   float: left;
 }
 
-.infoButton {
+.infoButton, .expandButton {
   float: right;
   text-align: center;
   width: 10%;
@@ -110,11 +105,11 @@ a {
   background-color: #FAFAFA;
 }
 
-.infoButton img {
+.infoButton, .expandButton img {
   vertical-align: center;
 }
 
-.infoSlider {
+.infoSlider, .expandSlider {
   width: 100%;
   height: 0;
   border-bottom-style: solid;
@@ -126,10 +121,17 @@ a {
   border-bottom-right-radius: 3px;
 }
 
-.infoText {
+.infoText{
   margin-left: 3px;
   margin-right: 3px;
   margin-bottom: 3px;
+  height: 100%;
+  width: 100%;
+  visibility: hidden;
+}
+
+.expandPane {
+  padding: 3px;
   height: 100%;
   width: 100%;
   visibility: hidden;
