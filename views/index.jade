@@ -189,7 +189,7 @@ block content
             #thirteen.expandPane
 
                 //- Highway-Highway
-                #13.ButtonContainer
+                #13.buttonContainer
                   #13.infoButton
                     img(src='/images/i.svg' height='12' width='12') 
                   #13.mainButton
@@ -203,7 +203,7 @@ block content
                     |Relation Without Type
 
                 //- Highway-Waterway
-                #14.ButtonContainer
+                #14.buttonContainer
                   #14.infoButton
                     img(src='/images/i.svg' height='12' width='12') 
                   #14.mainButton
@@ -221,24 +221,29 @@ block content
       $('.expandButton').click(function() {
 
         var ID = $(this).attr('id');
+        var scrollLoc = $('#errorContainer').scrollTop();
 
         if ($('#' + ID + '.expandSlider').height() == 0) {
           $('#' + ID + '.expandSlider').css('border-width','1px');
           $('#' + ID + '.buttonContainer').css('border-bottom-left-radius', '0px');
           $('#' + ID + '.buttonContainer').css('border-bottom-right-radius','0px');         
 
+          $('#errorContainer').animate({scrollTop: scrollLoc + 150}); 
+
           $('#' + ID + '.expandSlider').animate({height: '150px'}, {
             complete: function() {
-              $('#' + ID + '.expandPane').css('visibility','visible');
+              $('#' + ID + '.expandPane').css('display','inline');
             }});
+          
           } else {
-            $('#' + ID + '.expandPane').css('visibility','hidden');
+            $('#' + ID + '.expandPane').css('display','none');
             $('#' + ID + '.expandSlider').animate({height: '0px'}, {
               complete: function() {
                 $('#' + ID + '.expandSlider').css('border-width','0px');
                 $('#' + ID + '.buttonContainer').css('border-bottom-left-radius', '3px');
                 $('#' + ID + '.buttonContainer').css('border-bottom-right-radius','3px');
             }});
+            $('#errorContainer').animate({scrollTop: scrollLoc - 150}); 
       }});
 
     //- Handles Information Pane Expansion
@@ -246,7 +251,7 @@ block content
       $('.infoButton').click(function() {
 
         var ID = $(this).attr('id');
-        console.log(ID);
+        var scrollLoc = $('#errorContainer').scrollTop();
 
         if ($('#' + ID + '.infoSlider').height() == 0) {
           $('#' + ID + '.infoSlider').css('border-width','1px');
@@ -257,6 +262,7 @@ block content
             complete: function() {
               $('#' + ID + '.infoText').css('visibility','visible');
             }});
+            $('#errorContainer').animate({scrollTop: scrollLoc + 150}); 
           } else {
             $('#' + ID + '.infoText').css('visibility','hidden');
             $('#' + ID + '.infoSlider').animate({height: '0px'}, {
@@ -265,6 +271,8 @@ block content
                 $('#' + ID + '.buttonContainer').css('border-bottom-left-radius', '3px');
                 $('#' + ID + '.buttonContainer').css('border-bottom-right-radius','3px');
             }});
+            $('#errorContainer').animate({scrollTop: scrollLoc - 150}); 
+          
       }});
             
     #mapContainer(style='float: right; width: 75%; height: 100%;')
