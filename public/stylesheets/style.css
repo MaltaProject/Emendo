@@ -41,8 +41,18 @@ a {
   border: 1px solid #CCCCCC;
   background-color: #ffffff;
   border-radius: 3px;
-  margin-botton: 9px;
   margin-top: 9px;
+}
+
+.subButtonContainer {
+  width: 90%;
+  height: 50px;
+  border: 1px solid #CCCCCC;
+  background-color: #ffffff;
+  border-radius: 3px;
+  float: right;
+  margin-top: 9px;
+  margin-right: 9px;
 }
 
 .mainButton {
@@ -119,6 +129,7 @@ a {
   border-width: 0px;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
+  background-color: #ECECEC;
 }
 
 .infoText{
@@ -131,8 +142,6 @@ a {
 }
 
 .expandPane {
-  padding-left: 20px;
-  padding-right: 20px;
   height: 100%;
   width: 100%;
   display: none;
