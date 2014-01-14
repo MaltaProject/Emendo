@@ -261,9 +261,15 @@ block content
     //-Handles Selection
     Script.
       $('.mainButton').click(function(){
-        $(this).addClass('.selectedButtonImage');
-        $(this).removeClass('.buttonImage');
-
+        var ID = $(this).attr('id');
+        
+        //- [0] returns true if id and class exist
+        if ($('#' + ID + '.buttonImage')[0]){
+          $('#' + ID + '.buttonImage').replaceWith('<div id="' + ID + '" class="selectedButtonImage"></div>');
+        } else {
+          console.log('here');
+          $('#' + ID + '.selectedButtonImage').replaceWith('<div id="' + ID + '" class="buttonImage"></div>');
+        }
       });
 
     //- Handles Collapsed Selections
