@@ -11,7 +11,7 @@ block content
           #one.buttonContainer
             #one.infoButton
             #one.mainButton
-              #one.selectedButtonImage
+              #one.buttonImage
               #one.buttonTextContainer
                 #one.buttonText
                   |Non-Closed Area
@@ -174,34 +174,48 @@ block content
                   #13.infoText
                     |Relation Without Type
 
+    //-Handles Selection
+    Script.
+      $('.mainButton').click(function(){
+        $(this).addClass('.selectedButtonImage');
+        $(this).removeClass('.buttonImage');
+
+      });
+
     //- Handles Collapsed Selections
     Script.
       $('.expandButton').click(function() {
 
         var ID = $(this).attr('id');
+        var position = $(this).position();
         var scrollLoc = $('#errorContainer').scrollTop();
 
         if ($('#' + ID + '.expandSlider').height() == 0) {
           $('#' + ID + '.expandSlider').css('border-width','1px');
           $('#' + ID + '.buttonContainer').css('border-bottom-left-radius', '0px');
-          $('#' + ID + '.buttonContainer').css('border-bottom-right-radius','0px');         
-
-          $('#errorContainer').animate({scrollTop: scrollLoc + 150}); 
+          $('#' + ID + '.buttonContainer').css('border-bottom-right-radius','0px');
+           
 
           $('#' + ID + '.expandSlider').animate({height: '150px'}, {
             complete: function() {
               $('#' + ID + '.expandPane').css('display','inline');
             }});
           
-          } else {
-            $('#' + ID + '.expandPane').css('display','none');
-            $('#' + ID + '.expandSlider').animate({height: '0px'}, {
-              complete: function() {
-                $('#' + ID + '.expandSlider').css('border-width','0px');
-                $('#' + ID + '.buttonContainer').css('border-bottom-left-radius', '3px');
-                $('#' + ID + '.buttonContainer').css('border-bottom-right-radius','3px');
-            }});
-            $('#errorContainer').animate({scrollTop: scrollLoc - 150}); 
+          if (position.top > $(document).height()/2){
+            $('#errorContainer').animate({scrollTop: scrollLoc + 150});
+          }
+
+        } else {
+          $('#' + ID + '.expandPane').css('display','none');
+          $('#' + ID + '.expandSlider').animate({height: '0px'}, {
+            complete: function() {
+              $('#' + ID + '.expandSlider').css('border-width','0px');
+              $('#' + ID + '.buttonContainer').css('border-bottom-left-radius', '3px');
+              $('#' + ID + '.buttonContainer').css('border-bottom-right-radius','3px');
+          }});
+          if (position.top > $(document).height()/2){
+            $('#errorContainer').animate({scrollTop: scrollLoc - 150});
+          } 
       }});
 
     //- Handles Information Pane Expansion
@@ -209,6 +223,7 @@ block content
       $('.infoButton').click(function() {
 
         var ID = $(this).attr('id');
+        var position = $(this).position();
         var scrollLoc = $('#errorContainer').scrollTop();
 
         if ($('#' + ID + '.infoSlider').height() == 0) {
@@ -220,16 +235,22 @@ block content
             complete: function() {
               $('#' + ID + '.infoText').css('visibility','visible');
             }});
-            $('#errorContainer').animate({scrollTop: scrollLoc + 150}); 
-          } else {
-            $('#' + ID + '.infoText').css('visibility','hidden');
-            $('#' + ID + '.infoSlider').animate({height: '0px'}, {
-              complete: function() {
-                $('#' + ID + '.infoSlider').css('border-width','0px');
-                $('#' + ID + '.buttonContainer').css('border-bottom-left-radius', '3px');
-                $('#' + ID + '.buttonContainer').css('border-bottom-right-radius','3px');
-            }});
-            $('#errorContainer').animate({scrollTop: scrollLoc - 150}); 
+                   
+          if (position.top > $(document).height()/2){
+            $('#errorContainer').animate({scrollTop: scrollLoc + 150});
+          }
+           
+        } else {
+          $('#' + ID + '.infoText').css('visibility','hidden');
+          $('#' + ID + '.infoSlider').animate({height: '0px'}, {
+            complete: function() {
+              $('#' + ID + '.infoSlider').css('border-width','0px');
+              $('#' + ID + '.buttonContainer').css('border-bottom-left-radius', '3px');
+              $('#' + ID + '.buttonContainer').css('border-bottom-right-radius','3px');
+          }});
+          if (position.top > $(document).height()/2){
+            $('#errorContainer').animate({scrollTop: scrollLoc - 150});
+          } 
           
       }});
             
