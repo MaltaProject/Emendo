@@ -127,16 +127,28 @@ a {
   float: left;
 }
 
-.infoButton, .expandButton {
+.infoButton {
   float: right;
-  text-align: center;
   width: 10%;
-  line-height: 50px;
+  height: 100%;
   background-color: #FAFAFA;
+
+  background-image:url('/images/i.svg');
+  background-repeat:no-repeat;
+  background-size: 12px 12px;
+  background-position:center;
 }
 
-.infoButton, .expandButton img {
-  vertical-align: center;
+.expandButton {
+  float: right;
+  width: 10%;
+  height: 100%;
+  background-color: #FAFAFA;
+
+  background-image:url('/images/plus.svg');
+  background-repeat:no-repeat;
+  background-size: 12px 12px;
+  background-position:center;
 }
 
 .infoSlider, .expandSlider {
