@@ -12,7 +12,7 @@ block content
             #one.infoButton
               img(src='/images/i.svg' height='12' width='12') 
             #one.mainButton
-              #one.buttonImage
+              #one.selectedButtonImage
                 img(src='/images/pin/pin.svg' height='20' width='20')
               #one.buttonTextContainer
                 #one.buttonText
@@ -22,7 +22,7 @@ block content
               |A non closed area occurs when
             
           //- Dead Ended One-Ways
-          #two.buttonContainer
+          #two.selectedButtonContainer
             #two.infoButton
               img(src='/images/i.svg' height='12' width='12') 
             #two.mainButton
@@ -202,9 +202,19 @@ block content
                   #13.infoText
                     |Relation Without Type
 
+    //-Global Variables
+    Script.
+      var nonClosedBoolean = false;
+    
+
     //- Handles Radio Buttons
-    
-    
+    Script.
+      $('.mainButton').click(function() {
+        if (nonClosedBoolean == false){
+          nonClosedBoolean = true;
+          
+        }
+      });
     
 
     //- Handles Collapsed Selections
