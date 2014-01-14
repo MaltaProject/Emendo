@@ -12,7 +12,6 @@ block content
             #one.infoButton
             #one.mainButton
               #one.selectedButtonImage
-                img(src='/images/pin/pin.svg' height='20' width='20')
               #one.buttonTextContainer
                 #one.buttonText
                   |Non-Closed Area
@@ -25,7 +24,6 @@ block content
             #two.infoButton
             #two.mainButton
               #two.buttonImage
-                img(src='/images/pin/pin.svg' height='20' width='20')
               #two.buttonTextContainer
                 #two.buttonText
                   |Dead Ended One-Ways
@@ -38,7 +36,6 @@ block content
             #three.infoButton
             #three.mainButton
               #three.buttonImage
-                img(src='/images/pin/pin.svg' height='20' width='20')
               #three.buttonTextContainer
                 #three.buttonText
                   |Missing Tags
@@ -51,7 +48,6 @@ block content
             #four.infoButton
             #four.mainButton
               #four.buttonImage
-                img(src='/images/pin/pin.svg' height='20' width='20')
               #four.buttonTextContainer
                 #four.buttonText
                   |Motorways Without Ref
@@ -64,7 +60,6 @@ block content
             #five.infoButton
             #five.mainButton
               #five.buttonImage
-                img(src='/images/pin/pin.svg' height='20' width='20')
               #five.buttonTextContainer
                 #five.buttonText
                   |Missing Relgion Tag
@@ -77,7 +72,6 @@ block content
             #six.infoButton
             #six.mainButton
               #six.buttonImage
-                img(src='/images/pin/pin.svg' height='20' width='20')
               #six.buttonTextContainer
                 #six.buttonText
                   |POI Without Name
@@ -90,7 +84,6 @@ block content
             #seven.infoButton
             #seven.mainButton
               #seven.buttonImage
-                img(src='/images/pin/pin.svg' height='20' width='20')
               #seven.buttonTextContainer
                 #seven.buttonText
                   |Ways Withot Nodes
@@ -103,7 +96,6 @@ block content
             #eight.infoButton
             #eight.mainButton
               #eight.buttonImage
-                img(src='/images/pin/pin.svg' height='20' width='20')
               #eight.buttonTextContainer
                 #eight.buttonText
                   |Floating Islands
@@ -116,7 +108,6 @@ block content
             #nine.infoButton
             #nine.mainButton
               #nine.buttonImage
-                img(src='/images/pin/pin.svg' height='20' width='20')
               #nine.buttonTextContainer
                 #nine.buttonText
                   |Railway Crossing Without Tag
@@ -129,7 +120,6 @@ block content
             #ten.infoButton
             #ten.mainButton
               #ten.buttonImage
-                img(src='/images/pin/pin.svg' height='20' width='20')
               #ten.buttonTextContainer
                 #ten.buttonText
                   |Improper Railway Crossing
@@ -142,7 +132,6 @@ block content
             #eleven.infoButton
             #eleven.mainButton
               #eleven.buttonImage
-                img(src='/images/pin/pin.svg' height='20' width='20')
               #eleven.buttonTextContainer
                 #eleven.buttonText
                   |Fixme Tags
@@ -155,7 +144,6 @@ block content
             #twelve.infoButton
             #twelve.mainButton
               #twelve.buttonImage
-                img(src='/images/pin/pin.svg' height='20' width='20')
               #twelve.buttonTextContainer
                 #twelve.buttonText
                   |Relation Without Type
@@ -168,7 +156,6 @@ block content
             #thirteen.expandButton
             #thirteen.mainButton
               #thirteen.buttonImage
-                img(src='/images/pin/pin.svg' height='20' width='20')
               #thirteen.buttonTextContainer
                 #thirteen.buttonText
                   |Intersection Without Junction
@@ -180,22 +167,12 @@ block content
                   #13.infoButton
                   #13.mainButton
                     #twelve.buttonImage
-                      img(src='/images/pin/pin.svg' height='20' width='20')
                     #t13.buttonTextContainer
                       #13.buttonText
                         |Highway-Highway
                 #13.infoSlider
                   #13.infoText
                     |Relation Without Type
-
-    //- Handles Radio Buttons
-    Script.
-      $('.mainButton').click(function() {
-
-        $(this).replaceWith('.buttonImage')
-
-      });
-    
 
     //- Handles Collapsed Selections
     Script.

@@ -76,8 +76,11 @@ a {
   border-width: 1px;
   border-color: #CCCCCC;
   float: left;
-  text-align: center;
-  line-height: 50px;
+
+  background-image:url(/images/pin/pin.svg);
+  background-repeat:no-repeat;
+  background-size: 20px 20px;
+  background-position:center;
 }
 
 .selectedButtonImage {
@@ -89,17 +92,12 @@ a {
   border-width: 1px;
   border-color: #CCCCCC;
   float: left;
-  text-align: center;
-  line-height: 50px;
   box-shadow: 0 0 10px #7092FF inset;
-}
 
-.buttonImage img {
-  vertical-align: middle;
-}
-
-.selectedButtonImage img {
-  vertical-align: middle;
+  background-image:url(/images/pin/pin.svg);
+  background-repeat:no-repeat;
+  background-size: 20px 20px;
+  background-position:center;
 }
 
 .buttonTextContainer {
