@@ -9,6 +9,9 @@ var user = require('./routes/user');
 var http = require('http');
 var path = require('path');
 
+//Generate jade from JSON config
+
+
 var app = express();
 
 // all environments
