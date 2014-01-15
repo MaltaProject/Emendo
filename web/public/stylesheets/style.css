@@ -19,6 +19,43 @@ a {
   position: relative;
 }
 
+#title {
+
+}
+
+#searchContainer {
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-width: 1px;
+  border-color: #CCCCCC;
+  height: 50px;
+  width: 100%
+}
+
+#searchIcon {
+  width: 20%;
+  height: 100%;
+  background-image:url(/images/search.svg);
+  background-repeat:no-repeat;
+  background-size: 20px 20px;
+  background-position:center;
+  float: left;
+}
+
+#inputContainer {
+  width: 80%;
+  height: 90%;
+  float: right;
+}
+
+
+
+input[type=text]{
+  border-style: none;
+  height: 100%;
+  width: 100%;
+}
+
 #errorContainer {
   height: 85%;
   width: 100%;
