@@ -5,135 +5,159 @@
       "enabled": true,
       "selected": true,
       "desc": "Description",
-      "children": false
+      "children": false,
+      "id": 100
     },
     {
       "name": "Dead Ended One Way",
       "enabled": true,
       "selected": true,
       "desc": "Description",
-      "children": false
+      "children": false,
+      "id": 200
     },
     {
       "name": "Almost Junction",
       "enabled": true,
       "selected": true,
       "desc": "Description",
-      "children": false
+      "children": false,
+      "id": 300
     },
     {
       "name": "Missing Tag",
       "enabled": true,
       "selected": true,
       "desc": "Description",
-      "children": false
+      "children": false,
+      "id": 400
     },
     {
       "name": "Morotway Without Ref",
       "enabled": true,
       "selected": true,
       "desc": "Description",
-      "children": false
+      "children": false,
+      "id": 500
     },
     {
       "name": "Missing Religion Tag",
       "enabled": true,
       "selected": true,
       "desc": "Description",
-      "children": false
+      "children": false,
+      "id": 600
     },
     {
       "name": "POI Without Name",
       "enabled": true,
       "selected": true,
-      "desc": "Description"
+      "desc": "Description",
+      "children": false,
+      "id": 700
     },
     {
       "name": "Way Without Nodes",
       "enabled": true,
       "selected": true,
       "desc": "Description",
-      "children": false
+      "children": false,
+      "id": 800
     },
     {
       "name": "Floating Islands",
       "enabled": true,
       "selected": true,
-      "desc": "Description"
+      "desc": "Description",
+      "children": false,
+      "id": 900
     },
     {
       "name": "Railway Crossing Without Tag",
       "enabled": true,
       "selected": true,
       "desc": "Description",
-      "children": false
+      "children": false,
+      "id": 1000
     },
     {
       "name": "Improper Railway Crossing",
       "enabled": true,
       "selected": true,
       "desc": "Description",
-      "children": false
+      "children": false,
+      "id": 1100
     },
     {
       "name": "Fix-me Tagged Item",
       "enabled": true,
       "selected": true,
       "desc": "Description",
-      "children": false
+      "children": false,
+      "id": 1200
     },
     {
       "name": "Relation Without Type",
       "enabled": true,
       "selected": true,
       "desc": "Description",
-      "children": false
+      "children": false,
+      "id": 1300
     },
     {
       "name": "Intersection Without Junction",
       "enabled": true,
       "selected": true,
       "children": true,
+      "id": 1400
       "subChecks":[
         {
           "name": "Highway-Highway",
           "enabled": true,
-          "desc": "Description"
+          "desc": "Description",
+          "id": 1401
         },
         {
           "name": "Highway-Waterway",
           "enabled": true,
-          "desc": "Description"
+          "desc": "Description",
+          "id": 1402
         },
         {
           "name": "Highway-Riverbank",
           "enabled": true,
-          "desc": "Description"
+          "desc": "Description",
+          "id": 1403
         },
         {
           "name": "Waterway-Waterway",
           "enabled": true,
-          "desc": "Description"
+          "desc": "Description",
+          "id": 1404
         },
         {
           "name": "Cycleway-Cycleway",
           "enabled": true,
-          "desc": "Description"
+          "desc": "Description",
+          "id": 1405
         },
         {
           "name": "Highway-Cycleway",
           "enabled": true,
-          "desc": "Description"
+          "desc": "Description",
+          "id": 1406
         },
         {
           "name": "Cycleway-Waterway",
           "enabled": true,
-          "desc": "Description"
+          "desc": "Description",
+          "id": 1407
         },
         {
           "name": "Cycleway-Riverbank",
           "enabled": true,
-          "desc": "Description"
+          "desc": "Description",
+          "id": 1408
         }
       ]
     },
@@ -142,46 +166,55 @@
       "enabled": true,
       "selected": true,
       "children": true,
+      "id": 1500
       "subChecks":[
         {
           "name": "Highway-Highway",
           "enabled": true,
-          "desc": "Description"
+          "desc": "Description",
+          "id": 1501
         },
         {
           "name": "Highway-Waterway",
           "enabled": true,
-          "desc": "Description"
+          "desc": "Description",
+          "id": 1502
         },
         {
           "name": "Highway-Riverbank",
           "enabled": true,
-          "desc": "Description"
+          "desc": "Description",
+          "id": 1503
         },
         {
           "name": "Waterway-Waterway",
           "enabled": true,
-          "desc": "Description"
+          "desc": "Description",
+          "id": 1504
         },
         {
           "name": "Cycleway-Cycleway",
           "enabled": true,
-          "desc": "Description"
+          "desc": "Description",
+          "id": 1505
         },
         {
           "name": "Highway-Cycleway",
           "enabled": true,
-          "desc": "Description"
+          "desc": "Description",
+          "id": 1506
         },
         {
           "name": "Cycleway-Waterway",
           "enabled": true,
-          "desc": "Description"
+          "desc": "Description",
+          "id": 1507
         },
         {
           "name": "Cycleway-Riverbank",
           "enabled": true,
-          "desc": "Description"
+          "desc": "Description",
+          "id": 1508
         }
       ]
     },
@@ -190,14 +223,16 @@
       "enabled": true,
       "selected": true,
       "desc": "Description",
-      "children": false
+      "children": false,
+      "id": 1600
     },
     {
       "name": "Misspelled Tags",
       "enabled": true,
       "selected": true,
       "desc": "Description",
-      "children": false
+      "children": false,
+      "id": 1700
     },
     {
       "name": "Layer Conflicts",
@@ -205,16 +240,19 @@
       "selected": true,
       "desc": "Description",
       "children": true,
+      "id": 1800
       "subChecks":[
         {
           "name": "Mixed Layer Intersection",
           "enabled": true,
-          "desc": "Description"
+          "desc": "Description",
+          "id": 1801
         },
         {
           "name": "Strange Layers",
           "enabled": true,
-          "desc": "Description"
+          "desc": "Description",
+          "id": 1802
         }
       ]
     },
@@ -223,7 +261,8 @@
       "enabled": true,
       "selected": true,
       "desc": "Description",
-      "children": false
+      "children": false,
+      "id": 1900
     },
     {
       "name": "Boundaries",
@@ -231,31 +270,37 @@
       "selected": true,
       "desc": "Description",
       "children": true,
+      "id": 2000
       "subChecks":[
         {
           "name": "Missing Name",
           "enabled": true,
-          "desc": "Description"
+          "desc": "Description",
+          "id": 2001
         },
         {
           "name": "Missing admin_level",
           "enabled": true,
-          "desc": "Description"
+          "desc": "Description",
+          "id": 2002
         },
         {
           "name": "Not Closed Loop",
           "enabled": true,
-          "desc": "Description"
+          "desc": "Description",
+          "id": 2003
         },
         {
           "name": "Splitting Boundary",
           "enabled": true,
-          "desc": "Description"
+          "desc": "Description",
+          "id": 2004
         },
         {
           "name": "admin_level Too High",
           "enabled": true,
-          "desc": "Description"
+          "desc": "Description",
+          "id": 2005
         }
       ]
     },
@@ -265,46 +310,55 @@
       "selected": true,
       "desc": "Description",
       "children": true,
+      "id": 2100
       "subChecks":[
         {
           "name": "Missing Type",
           "enabled": true,
-          "desc": "Description"
+          "desc": "Description",
+          "id": 2101
         },
         {
           "name": "Missing From Way",
           "enabled": true,
-          "desc": "Description"
+          "desc": "Description",
+          "id": 2102
         },
         {
           "name": "Missing To Way",
           "enabled": true,
-          "desc": "Description"
+          "desc": "Description",
+          "id": 2103
         },
         {
           "name": "From Or To Not A Way",
           "enabled": true,
-          "desc": "Description"
+          "desc": "Description",
+          "id": 2104
         },
         {
           "name": "via Is Not On The Way Ends",
           "enabled": true,
-          "desc": "Description"
+          "desc": "Description",
+          "id": 2105
         },
         {
           "name": "Wrong Restriction Angle",
           "enabled": true,
-          "desc": "Description"
+          "desc": "Description",
+          "id": 2106
         },
         {
           "name": "Wrong Direction of to Member",
           "enabled": true,
-          "desc": "Description"
+          "desc": "Description",
+          "id": 2107
         },
         {
           "name": "Already Restricted By oneway",
           "enabled": true,
-          "desc": "Description"
+          "desc": "Description",
+          "id": 2108
         }
       ]
     },
@@ -314,21 +368,25 @@
       "selected": true,
       "desc": "Description",
       "children": true,
+      "id": 2200
       "subChecks":[
         {
           "name": "Not Closed Loop",
           "enabled": true,
-          "desc": "Description"
+          "desc": "Description",
+          "id": 2201
         },
         {
           "name": "Wrong Direction",
           "enabled": true,
-          "desc": "Description"
+          "desc": "Description",
+          "id": 2202
         },
         {
           "name": "Faintly Connected",
           "enabled": true,
-          "desc": "Description"
+          "desc": "Description",
+          "id": 2203
         }
       ]
     },
@@ -337,28 +395,32 @@
       "enabled": true,
       "selected": true,
       "desc": "Description",
-      "children": false
+      "children": false,
+      "id": 2300
     },
     {
       "name": "Bridge Tags",
       "enabled": true,
       "selected": true,
       "desc": "Description",
-      "children": false
+      "children": false,
+      "id": 2400
     },
     {
       "name": "Doubled Places",
       "enabled": true,
       "selected": true,
       "desc": "Description",
-      "children": false
+      "children": false,
+      "id": 2500
     },
     {
       "name": "Non-Physical sports Tag",
       "enabled": true,
       "selected": true,
       "desc": "Description",
-      "children": false
+      "children": false,
+      "id": 2600
     },
     {
       "name": "Geometry Glitches",
@@ -366,16 +428,19 @@
       "selected": true,
       "desc": "Description",
       "children": true,
+      "id": 2700
       "subChecks":[
         {
           "name": "Missing Turn Restriction",
           "enabled": true,
-          "desc": "Description"
+          "desc": "Description",
+          "id": 2701
         },
         {
           "name": "Impossible Angles",
           "enabled": true,
-          "desc": "Description"
+          "desc": "Description",
+          "id": 2702
         }
       ]
     },
@@ -385,21 +450,25 @@
       "selected": true,
       "desc": "Description",
       "children": true,
+      "id": 2800
       "subChecks":[
         {
           "name": "HTTP Error",
           "enabled": true,
-          "desc": "Description"
+          "desc": "Description",
+          "id": 2801
         },
         {
           "name": "Domain Hijacking",
           "enabled": true,
-          "desc": "Description"
+          "desc": "Description",
+          "id": 2802
         },
         {
           "name": "Non-Match",
           "enabled": true,
-          "desc": "Description"
+          "desc": "Description",
+          "id": 2803
         }
       ]
     },
@@ -408,35 +477,40 @@
       "enabled": true,
       "selected": true,
       "desc": "Description",
-      "children": false
+      "children": false,
+      "id": 2900
     },
     {
       "name": "Deprecated Tags",
       "enabled": true,
       "selected": true,
       "desc": "Description",
-      "children": false
+      "children": false,
+      "id": 3000
     },
     {
       "name": "Missing maxspeed",
       "enabled": true,
       "selected": true,
       "desc": "Description",
-      "children": false
+      "children": false,
+      "id": 3100
     },
     {
       "name": "Language Unknown",
       "enabled": true,
       "selected": true,
       "desc": "Description",
-      "children": false
+      "children": false,
+      "id": 3200
     },
     {
       "name": "Missing tracktype",
       "enabled": true,
       "selected": true,
       "desc": "Description",
-      "children": false
+      "children": false,
+      "id": 3300
     }
   ]
 }
