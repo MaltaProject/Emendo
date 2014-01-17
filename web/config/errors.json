@@ -1,0 +1,442 @@
+{
+  "checks":[
+    {
+      "name": "Non-Closed Area",
+      "enabled": true,
+      "selected": true,
+      "desc": "Description",
+      "children": false
+    },
+    {
+      "name": "Dead Ended One Way",
+      "enabled": true,
+      "selected": true,
+      "desc": "Description",
+      "children": false
+    },
+    {
+      "name": "Almost Junction",
+      "enabled": true,
+      "selected": true,
+      "desc": "Description",
+      "children": false
+    },
+    {
+      "name": "Missing Tag",
+      "enabled": true,
+      "selected": true,
+      "desc": "Description",
+      "children": false
+    },
+    {
+      "name": "Morotway Without Ref",
+      "enabled": true,
+      "selected": true,
+      "desc": "Description",
+      "children": false
+    },
+    {
+      "name": "Missing Religion Tag",
+      "enabled": true,
+      "selected": true,
+      "desc": "Description",
+      "children": false
+    },
+    {
+      "name": "POI Without Name",
+      "enabled": true,
+      "selected": true,
+      "desc": "Description"
+    },
+    {
+      "name": "Way Without Nodes",
+      "enabled": true,
+      "selected": true,
+      "desc": "Description",
+      "children": false
+    },
+    {
+      "name": "Floating Islands",
+      "enabled": true,
+      "selected": true,
+      "desc": "Description"
+    },
+    {
+      "name": "Railway Crossing Without Tag",
+      "enabled": true,
+      "selected": true,
+      "desc": "Description",
+      "children": false
+    },
+    {
+      "name": "Improper Railway Crossing",
+      "enabled": true,
+      "selected": true,
+      "desc": "Description",
+      "children": false
+    },
+    {
+      "name": "Fix-me Tagged Item",
+      "enabled": true,
+      "selected": true,
+      "desc": "Description",
+      "children": false
+    },
+    {
+      "name": "Relation Without Type",
+      "enabled": true,
+      "selected": true,
+      "desc": "Description",
+      "children": false
+    },
+    {
+      "name": "Intersection Without Junction",
+      "enabled": true,
+      "selected": true,
+      "children": true,
+      "subChecks":[
+        {
+          "name": "Highway-Highway",
+          "enabled": true,
+          "desc": "Description"
+        },
+        {
+          "name": "Highway-Waterway",
+          "enabled": true,
+          "desc": "Description"
+        },
+        {
+          "name": "Highway-Riverbank",
+          "enabled": true,
+          "desc": "Description"
+        },
+        {
+          "name": "Waterway-Waterway",
+          "enabled": true,
+          "desc": "Description"
+        },
+        {
+          "name": "Cycleway-Cycleway",
+          "enabled": true,
+          "desc": "Description"
+        },
+        {
+          "name": "Highway-Cycleway",
+          "enabled": true,
+          "desc": "Description"
+        },
+        {
+          "name": "Cycleway-Waterway",
+          "enabled": true,
+          "desc": "Description"
+        },
+        {
+          "name": "Cycleway-Riverbank",
+          "enabled": true,
+          "desc": "Description"
+        }
+      ]
+    },
+    {
+      "name": "Overlapping Ways",
+      "enabled": true,
+      "selected": true,
+      "children": true,
+      "subChecks":[
+        {
+          "name": "Highway-Highway",
+          "enabled": true,
+          "desc": "Description"
+        },
+        {
+          "name": "Highway-Waterway",
+          "enabled": true,
+          "desc": "Description"
+        },
+        {
+          "name": "Highway-Riverbank",
+          "enabled": true,
+          "desc": "Description"
+        },
+        {
+          "name": "Waterway-Waterway",
+          "enabled": true,
+          "desc": "Description"
+        },
+        {
+          "name": "Cycleway-Cycleway",
+          "enabled": true,
+          "desc": "Description"
+        },
+        {
+          "name": "Highway-Cycleway",
+          "enabled": true,
+          "desc": "Description"
+        },
+        {
+          "name": "Cycleway-Waterway",
+          "enabled": true,
+          "desc": "Description"
+        },
+        {
+          "name": "Cycleway-Riverbank",
+          "enabled": true,
+          "desc": "Description"
+        }
+      ]
+    },
+    {
+      "name": "Loopings",
+      "enabled": true,
+      "selected": true,
+      "desc": "Description",
+      "children": false
+    },
+    {
+      "name": "Misspelled Tags",
+      "enabled": true,
+      "selected": true,
+      "desc": "Description",
+      "children": false
+    },
+    {
+      "name": "Layer Conflicts",
+      "enabled": true,
+      "selected": true,
+      "desc": "Description",
+      "children": true,
+      "subChecks":[
+        {
+          "name": "Mixed Layer Intersection",
+          "enabled": true,
+          "desc": "Description"
+        },
+        {
+          "name": "Strange Layers",
+          "enabled": true,
+          "desc": "Description"
+        }
+      ]
+    },
+    {
+      "name": "Motorway Connected Directly",
+      "enabled": true,
+      "selected": true,
+      "desc": "Description",
+      "children": false
+    },
+    {
+      "name": "Boundaries",
+      "enabled": true,
+      "selected": true,
+      "desc": "Description",
+      "children": true,
+      "subChecks":[
+        {
+          "name": "Missing Name",
+          "enabled": true,
+          "desc": "Description"
+        },
+        {
+          "name": "Missing admin_level",
+          "enabled": true,
+          "desc": "Description"
+        },
+        {
+          "name": "Not Closed Loop",
+          "enabled": true,
+          "desc": "Description"
+        },
+        {
+          "name": "Splitting Boundary",
+          "enabled": true,
+          "desc": "Description"
+        },
+        {
+          "name": "admin_level Too High",
+          "enabled": true,
+          "desc": "Description"
+        }
+      ]
+    },
+    {
+      "name": "Restrictions",
+      "enabled": true,
+      "selected": true,
+      "desc": "Description",
+      "children": true,
+      "subChecks":[
+        {
+          "name": "Missing Type",
+          "enabled": true,
+          "desc": "Description"
+        },
+        {
+          "name": "Missing From Way",
+          "enabled": true,
+          "desc": "Description"
+        },
+        {
+          "name": "Missing To Way",
+          "enabled": true,
+          "desc": "Description"
+        },
+        {
+          "name": "From Or To Not A Way",
+          "enabled": true,
+          "desc": "Description"
+        },
+        {
+          "name": "via Is Not On The Way Ends",
+          "enabled": true,
+          "desc": "Description"
+        },
+        {
+          "name": "Wrong Restriction Angle",
+          "enabled": true,
+          "desc": "Description"
+        },
+        {
+          "name": "Wrong Direction of to Member",
+          "enabled": true,
+          "desc": "Description"
+        },
+        {
+          "name": "Already Restricted By oneway",
+          "enabled": true,
+          "desc": "Description"
+        }
+      ]
+    },
+    {
+      "name": "Roundabouts",
+      "enabled": true,
+      "selected": true,
+      "desc": "Description",
+      "children": true,
+      "subChecks":[
+        {
+          "name": "Not Closed Loop",
+          "enabled": true,
+          "desc": "Description"
+        },
+        {
+          "name": "Wrong Direction",
+          "enabled": true,
+          "desc": "Description"
+        },
+        {
+          "name": "Faintly Connected",
+          "enabled": true,
+          "desc": "Description"
+        }
+      ]
+    },
+    {
+      "name": "*_link Connections",
+      "enabled": true,
+      "selected": true,
+      "desc": "Description",
+      "children": false
+    },
+    {
+      "name": "Bridge Tags",
+      "enabled": true,
+      "selected": true,
+      "desc": "Description",
+      "children": false
+    },
+    {
+      "name": "Doubled Places",
+      "enabled": true,
+      "selected": true,
+      "desc": "Description",
+      "children": false
+    },
+    {
+      "name": "Non-Physical sports Tag",
+      "enabled": true,
+      "selected": true,
+      "desc": "Description",
+      "children": false
+    },
+    {
+      "name": "Geometry Glitches",
+      "enabled": true,
+      "selected": true,
+      "desc": "Description",
+      "children": true,
+      "subChecks":[
+        {
+          "name": "Missing Turn Restriction",
+          "enabled": true,
+          "desc": "Description"
+        },
+        {
+          "name": "Impossible Angles",
+          "enabled": true,
+          "desc": "Description"
+        }
+      ]
+    },
+    {
+      "name": "Website",
+      "enabled": true,
+      "selected": true,
+      "desc": "Description",
+      "children": true,
+      "subChecks":[
+        {
+          "name": "HTTP Error",
+          "enabled": true,
+          "desc": "Description"
+        },
+        {
+          "name": "Domain Hijacking",
+          "enabled": true,
+          "desc": "Description"
+        },
+        {
+          "name": "Non-Match",
+          "enabled": true,
+          "desc": "Description"
+        }
+      ]
+    },
+    {
+      "name": "Multiple Nodes on Spot",
+      "enabled": true,
+      "selected": true,
+      "desc": "Description",
+      "children": false
+    },
+    {
+      "name": "Deprecated Tags",
+      "enabled": true,
+      "selected": true,
+      "desc": "Description",
+      "children": false
+    },
+    {
+      "name": "Missing maxspeed",
+      "enabled": true,
+      "selected": true,
+      "desc": "Description",
+      "children": false
+    },
+    {
+      "name": "Language Unknown",
+      "enabled": true,
+      "selected": true,
+      "desc": "Description",
+      "children": false
+    },
+    {
+      "name": "Missing tracktype",
+      "enabled": true,
+      "selected": true,
+      "desc": "Description",
+      "children": false
+    }
+  ]
+}

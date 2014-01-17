@@ -1,256 +1,715 @@
-#searchContainer
-  #searchIcon
-  #inputContainer
-    input(type="text" name="search" autocomplete="off")
+include search
 #errorContainer
   #errorSpacer
-    //- Non-Closed Area Button
-    #one.buttonContainer
-      #one.infoButton
-      #one.mainButton
-        #one.buttonImage
-        #one.buttonTextContainer
-          #one.buttonText
+    #1.buttonContainer
+      #1.infoButton
+      #1.mainButton
+        #1.selectedButtonImage
+        #1.buttonTextContainer
+          #1.buttonText
             |Non-Closed Area
-    #one.infoSlider
-      #one.infoText
-        |A non closed area occurs when
-      
-    //- Dead Ended One-Ways
-    #two.buttonContainer
-      #two.infoButton
-      #two.mainButton
-        #two.buttonImage
-        #two.buttonTextContainer
-          #two.buttonText
-            |Dead Ended One-Ways
-    #two.infoSlider
-      #two.infoText
-        |A non closed area occurs when            
-
-    //- Missing Tags
-    #three.buttonContainer
-      #three.infoButton
-      #three.mainButton
-        #three.buttonImage
-        #three.buttonTextContainer
-          #three.buttonText
-            |Missing Tags
-    #three.infoSlider
-      #three.infoText
-        |Missing Tags
-
-    //- Motorways Without Ref
-    #four.buttonContainer
-      #four.infoButton
-      #four.mainButton
-        #four.buttonImage
-        #four.buttonTextContainer
-          #four.buttonText
-            |Motorways Without Ref
-    #four.infoSlider
-      #four.infoText
-        |Missing Tags
-
-    //- Missing Religion Tag
-    #five.buttonContainer
-      #five.infoButton
-      #five.mainButton
-        #five.buttonImage
-        #five.buttonTextContainer
-          #five.buttonText
-            |Missing Relgion Tag
-    #five.infoSlider
-      #five.infoText
-        |Places of Worship Without Religion
-
-    //- POI without Name
-    #six.buttonContainer
-      #six.infoButton
-      #six.mainButton
-        #six.buttonImage
-        #six.buttonTextContainer
-          #six.buttonText
+    #1.infoSlider
+      #1.infoText
+        |Description
+    #2.buttonContainer
+      #2.infoButton
+      #2.mainButton
+        #2.selectedButtonImage
+        #2.buttonTextContainer
+          #2.buttonText
+            |Dead Ended One Way
+    #2.infoSlider
+      #2.infoText
+        |Description
+    #3.buttonContainer
+      #3.infoButton
+      #3.mainButton
+        #3.selectedButtonImage
+        #3.buttonTextContainer
+          #3.buttonText
+            |Almost Junction
+    #3.infoSlider
+      #3.infoText
+        |Description
+    #4.buttonContainer
+      #4.infoButton
+      #4.mainButton
+        #4.selectedButtonImage
+        #4.buttonTextContainer
+          #4.buttonText
+            |Missing Tag
+    #4.infoSlider
+      #4.infoText
+        |Description
+    #5.buttonContainer
+      #5.infoButton
+      #5.mainButton
+        #5.selectedButtonImage
+        #5.buttonTextContainer
+          #5.buttonText
+            |Morotway Without Ref
+    #5.infoSlider
+      #5.infoText
+        |Description
+    #6.buttonContainer
+      #6.infoButton
+      #6.mainButton
+        #6.selectedButtonImage
+        #6.buttonTextContainer
+          #6.buttonText
+            |Missing Religion Tag
+    #6.infoSlider
+      #6.infoText
+        |Description
+    #7.buttonContainer
+      #7.infoButton
+      #7.mainButton
+        #7.selectedButtonImage
+        #7.buttonTextContainer
+          #7.buttonText
             |POI Without Name
-    #six.infoSlider
-      #six.infoText
-        |Point of Interest Without Name
-
-    //- Ways Without Nodes
-    #seven.buttonContainer
-      #seven.infoButton
-      #seven.mainButton
-        #seven.buttonImage
-        #seven.buttonTextContainer
-          #seven.buttonText
-            |Ways Withot Nodes
-    #seven.infoSlider
-      #seven.infoText
-        |Ways Without Nodes
-
-    //- Floating Islands
-    #eight.buttonContainer
-      #eight.infoButton
-      #eight.mainButton
-        #eight.buttonImage
-        #eight.buttonTextContainer
-          #eight.buttonText
+    #7.infoSlider
+      #7.infoText
+        |Description
+    #8.buttonContainer
+      #8.infoButton
+      #8.mainButton
+        #8.selectedButtonImage
+        #8.buttonTextContainer
+          #8.buttonText
+            |Way Without Nodes
+    #8.infoSlider
+      #8.infoText
+        |Description
+    #9.buttonContainer
+      #9.infoButton
+      #9.mainButton
+        #9.selectedButtonImage
+        #9.buttonTextContainer
+          #9.buttonText
             |Floating Islands
-    #eight.infoSlider
-      #eight.infoText
-        |Floating Islands
-
-    //- Railway Crossing Without Tag
-    #nine.buttonContainer
-      #nine.infoButton
-      #nine.mainButton
-        #nine.buttonImage
-        #nine.buttonTextContainer
-          #nine.buttonText
+    #9.infoSlider
+      #9.infoText
+        |Description
+    #10.buttonContainer
+      #10.infoButton
+      #10.mainButton
+        #10.selectedButtonImage
+        #10.buttonTextContainer
+          #10.buttonText
             |Railway Crossing Without Tag
-    #nine.infoSlider
-      #nine.infoText
-        |Missing Tags
-
-    //- Improper Railway Crossing
-    #ten.buttonContainer
-      #ten.infoButton
-      #ten.mainButton
-        #ten.buttonImage
-        #ten.buttonTextContainer
-          #ten.buttonText
+    #10.infoSlider
+      #10.infoText
+        |Description
+    #11.buttonContainer
+      #11.infoButton
+      #11.mainButton
+        #11.selectedButtonImage
+        #11.buttonTextContainer
+          #11.buttonText
             |Improper Railway Crossing
-    #ten.infoSlider
-      #ten.infoText
-        |Missing Tags
-
-    //- Fixme Tags
-    #eleven.buttonContainer
-      #eleven.infoButton
-      #eleven.mainButton
-        #eleven.buttonImage
-        #eleven.buttonTextContainer
-          #eleven.buttonText
-            |Fixme Tags
-    #eleven.infoSlider
-      #eleven.infoText
-        |Missing Tags
-
-    //- Relation Without Type
-    #twelve.buttonContainer
-      #twelve.infoButton
-      #twelve.mainButton
-        #twelve.buttonImage
-        #twelve.buttonTextContainer
-          #twelve.buttonText
+    #11.infoSlider
+      #11.infoText
+        |Description
+    #12.buttonContainer
+      #12.infoButton
+      #12.mainButton
+        #12.selectedButtonImage
+        #12.buttonTextContainer
+          #12.buttonText
+            |Fix-me Tagged Item
+    #12.infoSlider
+      #12.infoText
+        |Description
+    #13.buttonContainer
+      #13.infoButton
+      #13.mainButton
+        #13.selectedButtonImage
+        #13.buttonTextContainer
+          #13.buttonText
             |Relation Without Type
-    #twelve.infoSlider
-      #twelve.infoText
-        |Relation Without Type
-
-    //- Intersection Without Junction
-    #thirteen.buttonContainer
-      #thirteen.expandButton
-      #thirteen.mainButton
-        #thirteen.buttonImage
-        #thirteen.buttonTextContainer
-          #thirteen.buttonText
+    #13.infoSlider
+      #13.infoText
+        |Description
+    #14.buttonContainer
+      #14.expandButton
+      #14.mainButton
+        #14.selectedButtonImage
+        #14.buttonTextContainer
+          #14.buttonText
             |Intersection Without Junction
-    #thirteen.expandSlider
-      #thirteen.expandPane
-
-          //- Highway-Highway
-          #13.subButtonContainer
-            #13.infoButton
-            #13.mainButton
-              #twelve.buttonImage
-              #t13.buttonTextContainer
-                #13.buttonText
-                  |Highway-Highway
-          #13.infoSlider
-            #13.infoText
-              |Relation Without Type
-
-          //- Highway-Waterway
-          #13.subButtonContainer
-            #13.infoButton
-            #13.mainButton
-              #twelve.buttonImage
-              #t13.buttonTextContainer
-                #13.buttonText
-                  |Highway-Waterway
-          #13.infoSlider
-            #13.infoText
-              |Relation Without Type
-
-          //- Highway-Riverbank
-          #13.subButtonContainer
-            #13.infoButton
-            #13.mainButton
-              #twelve.buttonImage
-              #t13.buttonTextContainer
-                #13.buttonText
-                  |Highway-Riverbank
-          #13.infoSlider
-            #13.infoText
-              |Relation Without Type
-
-          //- Waterway-Waterway
-          #13.subButtonContainer
-            #13.infoButton
-            #13.mainButton
-              #twelve.buttonImage
-              #t13.buttonTextContainer
-                #13.buttonText
-                  |Waterway-Waterway
-          #13.infoSlider
-            #13.infoText
-              |Relation Without Type
-
-          //- Cycleway-Cycleway
-          #13.subButtonContainer
-            #13.infoButton
-            #13.mainButton
-              #twelve.buttonImage
-              #t13.buttonTextContainer
-                #13.buttonText
-                  |Cycleway-Cycleway
-          #13.infoSlider
-            #13.infoText
-              |Relation Without Type
-
-          //- Highway-Cycleway
-          #13.subButtonContainer
-            #13.infoButton
-            #13.mainButton
-              #twelve.buttonImage
-              #t13.buttonTextContainer
-                #13.buttonText
-                  |Highway-Cycleway
-          #13.infoSlider
-            #13.infoText
-              |Relation Without Type
-
-          //- Cycleway-Waterway
-          #13.subButtonContainer
-            #13.infoButton
-            #13.mainButton
-              #twelve.buttonImage
-              #t13.buttonTextContainer
-                #13.buttonText
-                  |Cycleway-Waterway
-          #13.infoSlider
-            #13.infoText
-              |Relation Without Type
-
-          //- Cycleway-Riverbank
-          #13.subButtonContainer
-            #13.infoButton
-            #13.mainButton
-              #twelve.buttonImage
-              #t13.buttonTextContainer
-                #13.buttonText
-                  |Cycleway-Riverbank
-          #13.infoSlider
-            #13.infoText
-              |Relation Without Type
+    #14.expandSlider
+      #14.expandPane
+          #15.subButtonContainer
+            #15.infoButton
+            #15.mainButton
+              #15.buttonImage
+              #15.buttonTextContainer
+                #15.buttonText
+                  |undefined
+          #15.infoSlider
+            #15.infoText
+              |undefined
+          #16.subButtonContainer
+            #16.infoButton
+            #16.mainButton
+              #16.buttonImage
+              #16.buttonTextContainer
+                #16.buttonText
+                  |undefined
+          #16.infoSlider
+            #16.infoText
+              |undefined
+          #17.subButtonContainer
+            #17.infoButton
+            #17.mainButton
+              #17.buttonImage
+              #17.buttonTextContainer
+                #17.buttonText
+                  |undefined
+          #17.infoSlider
+            #17.infoText
+              |undefined
+          #18.subButtonContainer
+            #18.infoButton
+            #18.mainButton
+              #18.buttonImage
+              #18.buttonTextContainer
+                #18.buttonText
+                  |undefined
+          #18.infoSlider
+            #18.infoText
+              |undefined
+          #19.subButtonContainer
+            #19.infoButton
+            #19.mainButton
+              #19.buttonImage
+              #19.buttonTextContainer
+                #19.buttonText
+                  |undefined
+          #19.infoSlider
+            #19.infoText
+              |undefined
+          #20.subButtonContainer
+            #20.infoButton
+            #20.mainButton
+              #20.buttonImage
+              #20.buttonTextContainer
+                #20.buttonText
+                  |undefined
+          #20.infoSlider
+            #20.infoText
+              |undefined
+          #21.subButtonContainer
+            #21.infoButton
+            #21.mainButton
+              #21.buttonImage
+              #21.buttonTextContainer
+                #21.buttonText
+                  |undefined
+          #21.infoSlider
+            #21.infoText
+              |undefined
+          #22.subButtonContainer
+            #22.infoButton
+            #22.mainButton
+              #22.buttonImage
+              #22.buttonTextContainer
+                #22.buttonText
+                  |undefined
+          #22.infoSlider
+            #22.infoText
+              |undefined
+    #23.buttonContainer
+      #23.expandButton
+      #23.mainButton
+        #23.selectedButtonImage
+        #23.buttonTextContainer
+          #23.buttonText
+            |Overlapping Ways
+    #23.expandSlider
+      #23.expandPane
+          #24.subButtonContainer
+            #24.infoButton
+            #24.mainButton
+              #24.buttonImage
+              #24.buttonTextContainer
+                #24.buttonText
+                  |undefined
+          #24.infoSlider
+            #24.infoText
+              |undefined
+          #25.subButtonContainer
+            #25.infoButton
+            #25.mainButton
+              #25.buttonImage
+              #25.buttonTextContainer
+                #25.buttonText
+                  |undefined
+          #25.infoSlider
+            #25.infoText
+              |undefined
+          #26.subButtonContainer
+            #26.infoButton
+            #26.mainButton
+              #26.buttonImage
+              #26.buttonTextContainer
+                #26.buttonText
+                  |undefined
+          #26.infoSlider
+            #26.infoText
+              |undefined
+          #27.subButtonContainer
+            #27.infoButton
+            #27.mainButton
+              #27.buttonImage
+              #27.buttonTextContainer
+                #27.buttonText
+                  |undefined
+          #27.infoSlider
+            #27.infoText
+              |undefined
+          #28.subButtonContainer
+            #28.infoButton
+            #28.mainButton
+              #28.buttonImage
+              #28.buttonTextContainer
+                #28.buttonText
+                  |undefined
+          #28.infoSlider
+            #28.infoText
+              |undefined
+          #29.subButtonContainer
+            #29.infoButton
+            #29.mainButton
+              #29.buttonImage
+              #29.buttonTextContainer
+                #29.buttonText
+                  |undefined
+          #29.infoSlider
+            #29.infoText
+              |undefined
+          #30.subButtonContainer
+            #30.infoButton
+            #30.mainButton
+              #30.buttonImage
+              #30.buttonTextContainer
+                #30.buttonText
+                  |undefined
+          #30.infoSlider
+            #30.infoText
+              |undefined
+          #31.subButtonContainer
+            #31.infoButton
+            #31.mainButton
+              #31.buttonImage
+              #31.buttonTextContainer
+                #31.buttonText
+                  |undefined
+          #31.infoSlider
+            #31.infoText
+              |undefined
+    #32.buttonContainer
+      #32.infoButton
+      #32.mainButton
+        #32.selectedButtonImage
+        #32.buttonTextContainer
+          #32.buttonText
+            |Loopings
+    #32.infoSlider
+      #32.infoText
+        |Description
+    #33.buttonContainer
+      #33.infoButton
+      #33.mainButton
+        #33.selectedButtonImage
+        #33.buttonTextContainer
+          #33.buttonText
+            |Misspelled Tags
+    #33.infoSlider
+      #33.infoText
+        |Description
+    #34.buttonContainer
+      #34.expandButton
+      #34.mainButton
+        #34.selectedButtonImage
+        #34.buttonTextContainer
+          #34.buttonText
+            |Layer Conflicts
+    #34.expandSlider
+      #34.expandPane
+          #35.subButtonContainer
+            #35.infoButton
+            #35.mainButton
+              #35.buttonImage
+              #35.buttonTextContainer
+                #35.buttonText
+                  |undefined
+          #35.infoSlider
+            #35.infoText
+              |undefined
+          #36.subButtonContainer
+            #36.infoButton
+            #36.mainButton
+              #36.buttonImage
+              #36.buttonTextContainer
+                #36.buttonText
+                  |undefined
+          #36.infoSlider
+            #36.infoText
+              |undefined
+    #37.buttonContainer
+      #37.infoButton
+      #37.mainButton
+        #37.selectedButtonImage
+        #37.buttonTextContainer
+          #37.buttonText
+            |Motorway Connected Directly
+    #37.infoSlider
+      #37.infoText
+        |Description
+    #38.buttonContainer
+      #38.expandButton
+      #38.mainButton
+        #38.selectedButtonImage
+        #38.buttonTextContainer
+          #38.buttonText
+            |Boundaries
+    #38.expandSlider
+      #38.expandPane
+          #39.subButtonContainer
+            #39.infoButton
+            #39.mainButton
+              #39.buttonImage
+              #39.buttonTextContainer
+                #39.buttonText
+                  |undefined
+          #39.infoSlider
+            #39.infoText
+              |undefined
+          #40.subButtonContainer
+            #40.infoButton
+            #40.mainButton
+              #40.buttonImage
+              #40.buttonTextContainer
+                #40.buttonText
+                  |undefined
+          #40.infoSlider
+            #40.infoText
+              |undefined
+          #41.subButtonContainer
+            #41.infoButton
+            #41.mainButton
+              #41.buttonImage
+              #41.buttonTextContainer
+                #41.buttonText
+                  |undefined
+          #41.infoSlider
+            #41.infoText
+              |undefined
+          #42.subButtonContainer
+            #42.infoButton
+            #42.mainButton
+              #42.buttonImage
+              #42.buttonTextContainer
+                #42.buttonText
+                  |undefined
+          #42.infoSlider
+            #42.infoText
+              |undefined
+          #43.subButtonContainer
+            #43.infoButton
+            #43.mainButton
+              #43.buttonImage
+              #43.buttonTextContainer
+                #43.buttonText
+                  |undefined
+          #43.infoSlider
+            #43.infoText
+              |undefined
+    #44.buttonContainer
+      #44.expandButton
+      #44.mainButton
+        #44.selectedButtonImage
+        #44.buttonTextContainer
+          #44.buttonText
+            |Restrictions
+    #44.expandSlider
+      #44.expandPane
+          #45.subButtonContainer
+            #45.infoButton
+            #45.mainButton
+              #45.buttonImage
+              #45.buttonTextContainer
+                #45.buttonText
+                  |undefined
+          #45.infoSlider
+            #45.infoText
+              |undefined
+          #46.subButtonContainer
+            #46.infoButton
+            #46.mainButton
+              #46.buttonImage
+              #46.buttonTextContainer
+                #46.buttonText
+                  |undefined
+          #46.infoSlider
+            #46.infoText
+              |undefined
+          #47.subButtonContainer
+            #47.infoButton
+            #47.mainButton
+              #47.buttonImage
+              #47.buttonTextContainer
+                #47.buttonText
+                  |undefined
+          #47.infoSlider
+            #47.infoText
+              |undefined
+          #48.subButtonContainer
+            #48.infoButton
+            #48.mainButton
+              #48.buttonImage
+              #48.buttonTextContainer
+                #48.buttonText
+                  |undefined
+          #48.infoSlider
+            #48.infoText
+              |undefined
+          #49.subButtonContainer
+            #49.infoButton
+            #49.mainButton
+              #49.buttonImage
+              #49.buttonTextContainer
+                #49.buttonText
+                  |undefined
+          #49.infoSlider
+            #49.infoText
+              |undefined
+          #50.subButtonContainer
+            #50.infoButton
+            #50.mainButton
+              #50.buttonImage
+              #50.buttonTextContainer
+                #50.buttonText
+                  |undefined
+          #50.infoSlider
+            #50.infoText
+              |undefined
+          #51.subButtonContainer
+            #51.infoButton
+            #51.mainButton
+              #51.buttonImage
+              #51.buttonTextContainer
+                #51.buttonText
+                  |undefined
+          #51.infoSlider
+            #51.infoText
+              |undefined
+          #52.subButtonContainer
+            #52.infoButton
+            #52.mainButton
+              #52.buttonImage
+              #52.buttonTextContainer
+                #52.buttonText
+                  |undefined
+          #52.infoSlider
+            #52.infoText
+              |undefined
+    #53.buttonContainer
+      #53.expandButton
+      #53.mainButton
+        #53.selectedButtonImage
+        #53.buttonTextContainer
+          #53.buttonText
+            |Roundabouts
+    #53.expandSlider
+      #53.expandPane
+          #54.subButtonContainer
+            #54.infoButton
+            #54.mainButton
+              #54.buttonImage
+              #54.buttonTextContainer
+                #54.buttonText
+                  |undefined
+          #54.infoSlider
+            #54.infoText
+              |undefined
+          #55.subButtonContainer
+            #55.infoButton
+            #55.mainButton
+              #55.buttonImage
+              #55.buttonTextContainer
+                #55.buttonText
+                  |undefined
+          #55.infoSlider
+            #55.infoText
+              |undefined
+          #56.subButtonContainer
+            #56.infoButton
+            #56.mainButton
+              #56.buttonImage
+              #56.buttonTextContainer
+                #56.buttonText
+                  |undefined
+          #56.infoSlider
+            #56.infoText
+              |undefined
+    #57.buttonContainer
+      #57.infoButton
+      #57.mainButton
+        #57.selectedButtonImage
+        #57.buttonTextContainer
+          #57.buttonText
+            |*_link Connections
+    #57.infoSlider
+      #57.infoText
+        |Description
+    #58.buttonContainer
+      #58.infoButton
+      #58.mainButton
+        #58.selectedButtonImage
+        #58.buttonTextContainer
+          #58.buttonText
+            |Bridge Tags
+    #58.infoSlider
+      #58.infoText
+        |Description
+    #59.buttonContainer
+      #59.infoButton
+      #59.mainButton
+        #59.selectedButtonImage
+        #59.buttonTextContainer
+          #59.buttonText
+            |Doubled Places
+    #59.infoSlider
+      #59.infoText
+        |Description
+    #60.buttonContainer
+      #60.infoButton
+      #60.mainButton
+        #60.selectedButtonImage
+        #60.buttonTextContainer
+          #60.buttonText
+            |Non-Physical sports Tag
+    #60.infoSlider
+      #60.infoText
+        |Description
+    #61.buttonContainer
+      #61.expandButton
+      #61.mainButton
+        #61.selectedButtonImage
+        #61.buttonTextContainer
+          #61.buttonText
+            |Geometry Glitches
+    #61.expandSlider
+      #61.expandPane
+          #62.subButtonContainer
+            #62.infoButton
+            #62.mainButton
+              #62.buttonImage
+              #62.buttonTextContainer
+                #62.buttonText
+                  |undefined
+          #62.infoSlider
+            #62.infoText
+              |undefined
+          #63.subButtonContainer
+            #63.infoButton
+            #63.mainButton
+              #63.buttonImage
+              #63.buttonTextContainer
+                #63.buttonText
+                  |undefined
+          #63.infoSlider
+            #63.infoText
+              |undefined
+    #64.buttonContainer
+      #64.expandButton
+      #64.mainButton
+        #64.selectedButtonImage
+        #64.buttonTextContainer
+          #64.buttonText
+            |Website
+    #64.expandSlider
+      #64.expandPane
+          #65.subButtonContainer
+            #65.infoButton
+            #65.mainButton
+              #65.buttonImage
+              #65.buttonTextContainer
+                #65.buttonText
+                  |undefined
+          #65.infoSlider
+            #65.infoText
+              |undefined
+          #66.subButtonContainer
+            #66.infoButton
+            #66.mainButton
+              #66.buttonImage
+              #66.buttonTextContainer
+                #66.buttonText
+                  |undefined
+          #66.infoSlider
+            #66.infoText
+              |undefined
+          #67.subButtonContainer
+            #67.infoButton
+            #67.mainButton
+              #67.buttonImage
+              #67.buttonTextContainer
+                #67.buttonText
+                  |undefined
+          #67.infoSlider
+            #67.infoText
+              |undefined
+    #68.buttonContainer
+      #68.infoButton
+      #68.mainButton
+        #68.selectedButtonImage
+        #68.buttonTextContainer
+          #68.buttonText
+            |Multiple Nodes on Spot
+    #68.infoSlider
+      #68.infoText
+        |Description
+    #69.buttonContainer
+      #69.infoButton
+      #69.mainButton
+        #69.selectedButtonImage
+        #69.buttonTextContainer
+          #69.buttonText
+            |Deprecated Tags
+    #69.infoSlider
+      #69.infoText
+        |Description
+    #70.buttonContainer
+      #70.infoButton
+      #70.mainButton
+        #70.selectedButtonImage
+        #70.buttonTextContainer
+          #70.buttonText
+            |Missing maxspeed
+    #70.infoSlider
+      #70.infoText
+        |Description
+    #71.buttonContainer
+      #71.infoButton
+      #71.mainButton
+        #71.selectedButtonImage
+        #71.buttonTextContainer
+          #71.buttonText
+            |Language Unknown
+    #71.infoSlider
+      #71.infoText
+        |Description
+    #72.buttonContainer
+      #72.infoButton
+      #72.mainButton
+        #72.selectedButtonImage
+        #72.buttonTextContainer
+          #72.buttonText
+            |Missing tracktype
+    #72.infoSlider
+      #72.infoText
+        |Description
