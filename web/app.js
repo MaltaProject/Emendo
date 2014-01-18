@@ -7,11 +7,15 @@ var user = require('./routes/user');
 var http = require('http');
 var path = require('path');
 
+
+//-----Blocks While Generating Files-----
 var gen = require('./generate.js')
 console.log('[Gen]: Sidebar from config/errors.json')
 gen.sidebar();
 console.log('[Gen]: JSON selection file');
 gen.selection();
+//---------------------------------------
+
 
 
 //Load Webserver

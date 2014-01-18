@@ -6,6 +6,11 @@ html
     script(src="/javascripts/leaflet.js")
     link(rel='stylesheet', href='/stylesheets/leaflet.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
+    
+    Script.
+      $.getJSON('/javascripts/selection.json', function(data) {
+        window.selection = data;
+      });
   body
     
     #page(style='width: 100%; height: 100%; margin: 0 auto;')
@@ -21,32 +26,32 @@ html
           if ($('#' + ID + '.buttonImage')[0]){
             $('#' + ID + '.buttonImage').replaceWith('<div id="' + ID + '" class="selectedButtonImage"></div>');
           } else {
-            console.log('here');
             $('#' + ID + '.selectedButtonImage').replaceWith('<div id="' + ID + '" class="buttonImage"></div>');
           }
         });
 
-      //- Handles Collapsed Selections
+      //- Handles Sub Buttons
       Script.
         $('.expandButton').click(function() {
 
           var ID = $(this).attr('id');
           var position = $(this).position();
           var scrollLoc = $('#errorContainer').scrollTop();
+          var size = window.selection.checks[ID].subChecks.length * (50 + 10) + 20;
+
 
           if ($('#' + ID + '.expandSlider').height() == 0) {
             $('#' + ID + '.expandSlider').css('border-width','1px');
             $('#' + ID + '.buttonContainer').css('border-bottom-left-radius', '0px');
             $('#' + ID + '.buttonContainer').css('border-bottom-right-radius','0px');
-             
-
-            $('#' + ID + '.expandSlider').animate({height: '150px'}, {
+            
+            $('#' + ID + '.expandSlider').animate({height: size}, {
               complete: function() {
                 $('#' + ID + '.expandPane').css('display','inline');
               }});
             
             if (position.top > $(document).height()/2){
-              $('#errorContainer').animate({scrollTop: scrollLoc + 150});
+              $('#errorContainer').animate({scrollTop: scrollLoc + size});
             }
 
           } else {
@@ -58,7 +63,7 @@ html
                 $('#' + ID + '.buttonContainer').css('border-bottom-right-radius','3px');
             }});
             if (position.top > $(document).height()/2){
-              $('#errorContainer').animate({scrollTop: scrollLoc - 150});
+              $('#errorContainer').animate({scrollTop: scrollLoc - size});
             } 
         }});
 
