@@ -109,7 +109,7 @@
       "enabled": true,
       "selected": true,
       "children": true,
-      "id": 1400
+      "id": 1400,
       "subChecks":[
         {
           "name": "Highway-Highway",
@@ -166,7 +166,7 @@
       "enabled": true,
       "selected": true,
       "children": true,
-      "id": 1500
+      "id": 1500,
       "subChecks":[
         {
           "name": "Highway-Highway",
@@ -240,7 +240,7 @@
       "selected": true,
       "desc": "Description",
       "children": true,
-      "id": 1800
+      "id": 1800,
       "subChecks":[
         {
           "name": "Mixed Layer Intersection",
@@ -270,7 +270,7 @@
       "selected": true,
       "desc": "Description",
       "children": true,
-      "id": 2000
+      "id": 2000,
       "subChecks":[
         {
           "name": "Missing Name",
@@ -310,7 +310,7 @@
       "selected": true,
       "desc": "Description",
       "children": true,
-      "id": 2100
+      "id": 2100,
       "subChecks":[
         {
           "name": "Missing Type",
@@ -368,7 +368,7 @@
       "selected": true,
       "desc": "Description",
       "children": true,
-      "id": 2200
+      "id": 2200,
       "subChecks":[
         {
           "name": "Not Closed Loop",
@@ -428,7 +428,7 @@
       "selected": true,
       "desc": "Description",
       "children": true,
-      "id": 2700
+      "id": 2700,
       "subChecks":[
         {
           "name": "Missing Turn Restriction",
@@ -450,7 +450,7 @@
       "selected": true,
       "desc": "Description",
       "children": true,
-      "id": 2800
+      "id": 2800,
       "subChecks":[
         {
           "name": "HTTP Error",
