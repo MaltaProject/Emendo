@@ -7,7 +7,6 @@ var user = require('./routes/user');
 var http = require('http');
 var path = require('path');
 
-
 //-----Blocks While Generating Files-----
 var gen = require('./generate.js')
 console.log('[Gen]: Sidebar from config/errors.json')
@@ -21,6 +20,12 @@ gen.selection();
 //Load Webserver
 var app = express();
 
+api.listen('8080', 'localhost', function(){
+  console.log('Restful API active');  
+  api.use(restify.queryParser());
+  api.use(restify.bodyParser));
+});
+  
 // all environments
 app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
