@@ -1,3 +1,11 @@
 {
-  "connection": "postgres://keepright:keepright@localhost:5432/osm"
+  "connection": "postgres://keepright:keepright@localhost:5432/osm",
+  "checks":[
+    {
+      "name": "Fixme Tagged Item",
+      "enabled": true,
+      "loc": "fixme.js",
+      "id": "1200"
+    }
+  ]
 }

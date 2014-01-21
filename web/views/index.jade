@@ -1,7 +1,7 @@
 doctype html
 html
   head
-    title Keep Right!
+    title Emendo!
     script(src="/javascripts/jquery-2.0.3.min.js")
     script(src="/javascripts/leaflet.js")
     link(rel='stylesheet', href='/stylesheets/leaflet.css')
@@ -110,3 +110,9 @@ html
           // add an OpenStreetMap tile layer
           L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'}).addTo(map);
+          var errorLayer = L.geoJson().addTo(map);
+
+          $.getJSON('http://localhost:3000/api/', function(data) {
+              console.log(data);
+              errorLayer.addData(data);
+            });

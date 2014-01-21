@@ -1,0 +1,6 @@
+
+INSERT INTO tmp_errors(error_id, object_type, object_id, lat, lon) SELECT 1200, 'way', id, ST_X(geom), ST_Y(geom) FROM nodes WHERE id = ANY (SELECT node_id FROM node_tags WHERE k iLIKE '%fixme%' OR v iLIKE '%fixme%' OR (k='name' AND v='tbd') OR (k='ref' AND v='tbd') OR (k='highway' AND v='road'))");
+
+SELECT id FROM nodes WHERE id = ANY (SELECT way_id FROM ways, way_nodes WHERE ways.id = way_nodes.way_id AND sequence_id = 0) LIMIT 10;
+
+Anyway
