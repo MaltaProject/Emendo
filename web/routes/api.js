@@ -40,7 +40,7 @@ exports.findErrors = function(req, res){
     if(err) {
       return console.error('could not connect to postgres', err);
     }
-    client.query("SELECT * FROM emendo_errors LIMIT 1", function(err, result) {
+    client.query("SELECT * FROM emendo_errors LIMIT 100", function(err, result) {
       if(err) {
         res.send(500, "Internal Server Error");
         return console.error('error running query', err);
@@ -63,14 +63,11 @@ function getJSON(query, res){
   result.geometries = [];
   
   for (var i = 0; i<query.rows.length; i++){
-    var point = {
-      "type": "Point",
-      "coordinates": [query.rows[i].lon, query.rows[i].lat]
-      };
+    var point = {};
+    point.type = "Point";
+    point.coordinates = [query.rows[i].lon, query.rows[i].lat];
     result.geometries.push(point);
   }
-  
-  console.log(query);
   
   res.json(200, result);
 }
