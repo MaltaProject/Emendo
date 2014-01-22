@@ -3,4 +3,4 @@ INSERT INTO tmp_errors(error_id, object_type, object_id, lat, lon) SELECT 1200, 
 
 SELECT id FROM nodes WHERE id = ANY (SELECT way_id FROM ways, way_nodes WHERE ways.id = way_nodes.way_id AND sequence_id = 0) LIMIT 10;
 
-Anyway
+SELECT id FROM ()

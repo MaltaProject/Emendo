@@ -212,3 +212,9 @@ input[type=text]{
   width: 100%;
   display: none;
 }
+
+.popup{
+  background-color: red;
+  height: auto;
+  width: 300px;
+}

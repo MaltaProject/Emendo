@@ -110,9 +110,16 @@ html
           // add an OpenStreetMap tile layer
           L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'}).addTo(map);
-          var errorLayer = L.geoJson().addTo(map);
-
+          
+          function onEachFeature(feature, layer){
+            layer.bindPopup('<div class="popup"></div>');
+          }
+          
           $.getJSON('http://localhost:3000/api/', function(data) {
-              console.log(data);
-              errorLayer.addData(data);
-            });
+            var errorLayer = L.geoJson(data, {
+                onEachFeature: onEachFeature
+            }).addTo(map);
+            errorLayer.addData(data);
+          });
+            
+      
