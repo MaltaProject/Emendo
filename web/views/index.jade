@@ -112,7 +112,8 @@ html
             attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'}).addTo(map);
           
           function onEachFeature(feature, layer){
-            layer.bindPopup('<div class="popup"></div>');
+            layer.bindPopup('<div class="popup-title">Fixme</div>'
+                            +'<input type="text" name="popup-comment">');
           }
           
           $.getJSON('http://localhost:3000/api/', function(data) {

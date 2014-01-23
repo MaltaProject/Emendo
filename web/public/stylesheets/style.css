@@ -52,6 +52,22 @@ input[type=text]{
   border-style: none;
   height: 100%;
   width: 100%;
+  font-family: 'Helvetica Neue',Arial,sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #909394;
+  line-height: 100%;
+}
+
+input[type=text, name=popup-comment]{
+  height: 100px;
+  width: 300px;
+}
+input[type=text, name=popup-comment]:hover{
+  height: 100px;
+  width: 300px;
+  box-shadow: 0 0 10px #7092FF;
+  border: none;
 }
 
 #errorContainer {
@@ -213,8 +229,9 @@ input[type=text]{
   display: none;
 }
 
-.popup{
-  background-color: red;
+.popup-title{
+font-family: arial;
+  font-weight: bold;
   height: auto;
   width: 300px;
 }
