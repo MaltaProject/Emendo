@@ -17,7 +17,17 @@ html
       #panelContainer
         include sidebar
 
-      //-Handles Selection
+      //Handles SearchBar
+      Script.
+        $('input#search').focus(function(){
+          $('#searchContainer').css("background-color","#F1F1F1");
+        });
+        $('input#search').focusout(function(){
+          $('#searchContainer').css("background-color","#ffffff");
+        });
+      
+
+      //-Handles RadioButton Selection
       Script.
         $('.mainButton').click(function(){
           var ID = $(this).attr('id');
