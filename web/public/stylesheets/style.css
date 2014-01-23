@@ -49,6 +49,7 @@ a {
 }
 
 input[type=text]{
+  background: transparent;
   border-style: none;
   height: 100%;
   width: 100%;
@@ -60,10 +61,10 @@ input[type=text]{
 }
 
 input[type=text, name=popup-comment]{
-  height: 100px;
-  width: 300px;
 }
-input[type=text, name=popup-comment]:hover{
+
+
+input[type=text, name=popup-comment]:hover {
   height: 100px;
   width: 300px;
   box-shadow: 0 0 10px #7092FF;

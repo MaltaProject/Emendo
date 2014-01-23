@@ -21,6 +21,11 @@ html
       Script.
         $('input#search').focus(function(){
           $('#searchContainer').css("background-color","#F1F1F1");
+          
+          console.log($('input#search').val());
+        });
+        $('input#search').focusout(function(){
+          $('#searchContainer').css("background-color","#ffffff");
         });
         $('input#search').focusout(function(){
           $('#searchContainer').css("background-color","#ffffff");
