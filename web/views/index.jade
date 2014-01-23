@@ -22,12 +22,22 @@ html
         //On focus change color
         $('input#search').focus(function(){
           $('#searchContainer').css("background-color","#F1F1F1");
-          
-          console.log($('input#search').val());
         });
+        
         //On focusoff lose color
         $('input#search').focusout(function(){
           $('#searchContainer').css("background-color","#ffffff");
+        });
+        
+        //Change Text to Black when user starts typing
+        $('input#search').on("keyup", function(){
+          if ($('input#search').css("color") == "rgb(144, 147, 148)"){
+            $('input#search').css("color", "#000000");
+          } else if ($('input#search').val() == ""){
+            $('input#search').val("Filter");
+            $('input#search').css("color", "#909394");
+          }
+          console.log($('input#search').val());
         });
       
 
