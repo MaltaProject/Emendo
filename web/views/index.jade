@@ -19,14 +19,13 @@ html
 
       //Handles SearchBar
       Script.
+        //On focus change color
         $('input#search').focus(function(){
           $('#searchContainer').css("background-color","#F1F1F1");
           
           console.log($('input#search').val());
         });
-        $('input#search').focusout(function(){
-          $('#searchContainer').css("background-color","#ffffff");
-        });
+        //On focusoff lose color
         $('input#search').focusout(function(){
           $('#searchContainer').css("background-color","#ffffff");
         });
