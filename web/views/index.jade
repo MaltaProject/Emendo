@@ -29,11 +29,17 @@ html
           $('#searchContainer').css("background-color","#ffffff");
         });
         
-        //Change Text to Black when user starts typing
-        $('input#search').on("keyup", function(){
+        //Clear 'Filter' & Change to black when user starts typing
+        $('input#search').keypress(function(){
           if ($('input#search').css("color") == "rgb(144, 147, 148)"){
+            $('input#search').val("");
             $('input#search').css("color", "#000000");
-          } else if ($('input#search').val() == ""){
+          }
+        });
+        
+        //Replace Filter when user erases filter
+        $('input#search').on("keyup", function(){            
+          if ($('input#search').val() == ""){
             $('input#search').val("Filter");
             $('input#search').css("color", "#909394");
           }
