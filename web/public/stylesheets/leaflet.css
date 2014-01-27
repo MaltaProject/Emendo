@@ -260,6 +260,9 @@
 	}
 .leaflet-control-zoom-out {
 	font-size: 20px;
+  
+  width: 36px;
+	height: 36px;
 	}
 
 .leaflet-touch .leaflet-control-zoom-in {

@@ -71,16 +71,11 @@ module.exports = {
       if (config.checks[i].enabled == false){
         delete config.checks[i] 
       } else {
-        delete config.checks[i].name;
-        delete config.checks[i].desc;
-        
         if (config.checks[i].children == true){
           for (var e = 0; e < config.checks[i].subChecks.length; e++){
             if (config.checks[i].subChecks[e].enabled == false){
              delete config.checks[i].subChecks[e];
             } else {
-               delete config.checks[i].subChecks[e].name;
-               delete config.checks[i].subChecks[e].desc;
                if (config.checks[i].selected == true){
                 config.checks[i].subChecks[e].selected = true;  
                } else {

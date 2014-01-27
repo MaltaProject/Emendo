@@ -29,7 +29,7 @@ a {
   border-width: 1px;
   border-color: #CCCCCC;
   height: 50px;
-  width: 100%
+  width: 100%;
 }
 
 #searchIcon {
@@ -71,25 +71,7 @@ input[type=text]#search{
   font-size: 18px;
   font-weight: bold;
   
-  /*Disable Highlighting*/
-  -moz-user-select: -moz-none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  
   position: absolute;
-}
-
-input[type=text, name=popup-comment]{
-}
-
-
-input[type=text, name=popup-comment]:hover {
-  height: 100px;
-  width: 300px;
-  box-shadow: 0 0 10px #7092FF;
-  border: none;
 }
 
 #errorContainer {
@@ -251,9 +233,24 @@ input[type=text, name=popup-comment]:hover {
   display: none;
 }
 
+.popup-container {
+  height: auto;
+  width: 300px;
+}
 .popup-title{
 font-family: arial;
   font-weight: bold;
   height: auto;
-  width: 300px;
+  width: 100%;
+}
+
+textarea#popup-comment{
+  height: 100px;
+  width: 100%;
+  resize: none;
+  background: none;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #CCCCCC;
+  border-radius: 3px;
 }
