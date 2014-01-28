@@ -5,9 +5,12 @@ html
     script(src="/javascripts/jquery-2.0.3.min.js")
     script(src="/javascripts/leaflet.js")
     script(src="/javascripts/Control.OSMGeocoder.js")
+    script(src="/javascripts/jquery.cookie.js")
+    script(src="/javascripts/L.Control.Locate.js")
     link(rel='stylesheet', href='/stylesheets/Control.OSMGeocoder.css')
     link(rel='stylesheet', href='/stylesheets/leaflet.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/L.Control.Locate.css')
     
     Script.
       $.getJSON('/javascripts/selection.json', function(data) {
@@ -163,7 +166,14 @@ html
           
           var osmGeocoder = new L.Control.OSMGeocoder();
           map.addControl(osmGeocoder);
-          new L.Control.Zoom({ position: 'topleft' }).addTo(map);
+          new L.Control.Zoom({ position: 'topright' }).addTo(map);
+          L.control.locate({ position: 'topright' }).addTo(map);
+          
+          //Save Current Position As Cookie
+          //map.on('load', function(){
+          //  $.cookie('northEast', map.getNorthEast(), { expires: 7 });
+          //  $.cookie('southWest', map.getSouthWest(), { expires: 7 });
+          //});
           
           function onEachFeature(feature, layer){
             console.log(feature);
